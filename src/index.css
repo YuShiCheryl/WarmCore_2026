@@ -1,41 +1,50 @@
-/* 自定义字体定义 - 请根据客户提供的字体文件修改字体名称和路径 */
+/* Font1 字体定义 */
 @font-face {
-  font-family: 'CustomPrimary';
-  src: url('/fonts/primary-font.woff2') format('woff2'),
-       url('/fonts/primary-font.woff') format('woff'),
-       url('/fonts/primary-font.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Font1';
+  src: url('/fonts/Font1 Light.ttf') format('truetype');
+  font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'CustomPrimary';
-  src: url('/fonts/primary-font-bold.woff2') format('woff2'),
-       url('/fonts/primary-font-bold.woff') format('woff'),
-       url('/fonts/primary-font-bold.ttf') format('truetype');
-  font-weight: bold;
+  font-family: 'Font1';
+  src: url('/fonts/Font1 Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'CustomSecondary';
-  src: url('/fonts/secondary-font.woff2') format('woff2'),
-       url('/fonts/secondary-font.woff') format('woff'),
-       url('/fonts/secondary-font.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Font1';
+  src: url('/fonts/Font1 Bold.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'CustomAccent';
-  src: url('/fonts/accent-font.woff2') format('woff2'),
-       url('/fonts/accent-font.woff') format('woff'),
-       url('/fonts/accent-font.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Font1';
+  src: url('/fonts/Font1 Bold.ttf') format('truetype');
+  font-weight: 700;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Font1';
+  src: url('/fonts/Font1 Bold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Neulis Sans Black Italic 用于 GMET 商标 */
+@font-face {
+  font-family: 'Neulis Sans Black Italic';
+  src: url('/fonts/fonnts.com-Neulis_Sans_Black_Italic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -50,7 +59,7 @@
 
 body {
   margin: 0;
-  font-family: 'CustomSecondary', 'CustomPrimary', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+  font-family: 'Font1', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

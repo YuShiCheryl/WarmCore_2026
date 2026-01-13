@@ -13,7 +13,7 @@ const HomePage = () => {
         />
         <nav className="header-nav">
           <a href="#gmet" className="nav-link">
-            <span className="nav-link-bold">GMET</span>®技术
+            <span className="nav-link-bold gmet-trademark">GMET</span>®技术
           </a>
           <a href="#solutions" className="nav-link">解决方案与产品</a>
           <a href="#about" className="nav-link">关于我们</a>
@@ -44,7 +44,7 @@ const HomePage = () => {
           </div>
           <button className="hero-button">了解智能深睡毯Pro3.0</button>
           <button className="hero-button hero-button-secondary">
-            了解 <span className="button-bold">GMET</span>®专利技术
+            了解 <span className="button-bold gmet-trademark">GMET</span>®专利技术
           </button>
           <svg className="scroll-indicator" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16 24L24 32M24 32L32 24M24 32V16M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z" stroke="#B3B3B3" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
@@ -92,7 +92,7 @@ const HomePage = () => {
       <section className="section-temperature">
         <h2 className="section-heading">所设即所得，<br />温度从未如此精准。</h2>
         <p className="section-description">
-          恒温并非静止，而是主动对环境做出响应的动态平衡。夜晚的舒适，不应因为被褥的厚薄或环境的冷暖而改变。<span className="text-bold">GMET</span>®技术，如同一位细心的守护者时刻感受温度的细微变化。这一切，只为让您更好的进入深睡眠。
+          恒温并非静止，而是主动对环境做出响应的动态平衡。夜晚的舒适，不应因为被褥的厚薄或环境的冷暖而改变。<span className="text-bold gmet-trademark">GMET</span>®技术，如同一位细心的守护者时刻感受温度的细微变化。这一切，只为让您更好的进入深睡眠。
         </p>
         <div className="temperature-visual-container">
           <div className="temperature-visual-background"></div>
@@ -121,7 +121,7 @@ const HomePage = () => {
       <section className="section-even-temperature">
         <h2 className="section-heading">均匀温场,温润不燥。</h2>
         <p className="section-description">
-          这一切，得益于我们独立研发的<span className="text-bold">GMET</span>®技术。它采用先进的低温发热非晶材料，发热面积高达传统电热丝的25倍，而厚度仅为20微米。这种"广而薄"的突破性结构，使得热量能够被瞬间、均匀地传导至整个毯面，从物理根源上避免了传统发热材料难以解决的局部过热与冷暖不均现象，为您构建一个真正稳定、均衡的睡眠热环境。
+          这一切，得益于我们独立研发的<span className="text-bold gmet-trademark">GMET</span>®技术。它采用先进的低温发热非晶材料，发热面积高达传统电热丝的25倍，而厚度仅为20微米。这种"广而薄"的突破性结构，使得热量能够被瞬间、均匀地传导至整个毯面，从物理根源上避免了传统发热材料难以解决的局部过热与冷暖不均现象，为您构建一个真正稳定、均衡的睡眠热环境。
         </p>
         <div className="material-showcase">
           <img 
@@ -262,11 +262,11 @@ const HomePage = () => {
         <div className="footer-content">
           <div className="footer-newsletter">
             <svg width="193" height="112" viewBox="0 0 193 112" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <text fill="white" style={{ whiteSpace: 'pre', fontFamily: 'Roboto', fontSize: '15px', fontWeight: 'bold' }}>
+              <text fill="white" style={{ whiteSpace: 'pre', fontFamily: 'Font1', fontSize: '15px', fontWeight: 'bold' }}>
                 <tspan x="0" y="35.627">希望获取更多咨询？</tspan>
                 <tspan x="0" y="60.627">留下您的邮箱</tspan>
               </text>
-              <text fill="#AEAEB2" style={{ whiteSpace: 'pre', fontFamily: 'Roboto', fontSize: '10px' }}>
+              <text fill="#AEAEB2" style={{ whiteSpace: 'pre', fontFamily: 'Font1', fontSize: '10px' }}>
                 <tspan x="0" y="102.418">输入电子邮件</tspan>
               </text>
               <rect x="0.25" y="111.25" width="149.5" height="0.5" stroke="white" strokeWidth="0.5"/>

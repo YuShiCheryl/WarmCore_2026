@@ -7,9 +7,9 @@
   --color-gray-muted: #AEAEB2;
   --fill-primary: rgba(120, 120, 120, 0.20);
   --fill-secondary: rgba(120, 120, 128, 0.16);
-  --font-primary: 'CustomPrimary', -apple-system, Roboto, Helvetica, sans-serif;
-  --font-secondary: 'CustomSecondary', -apple-system, Roboto, Helvetica, sans-serif;
-  --font-accent: 'CustomAccent', -apple-system, Roboto, Helvetica, sans-serif;
+  --font-primary: 'Font1', -apple-system, Roboto, Helvetica, sans-serif;
+  --font-secondary: 'Font1', -apple-system, Roboto, Helvetica, sans-serif;
+  --font-accent: 'Font1', -apple-system, Roboto, Helvetica, sans-serif;
 }
 
 * {
@@ -80,6 +80,13 @@
 .nav-link-bold {
   font-family: var(--font-accent);
   font-weight: 900;
+}
+
+/* GMET 商标专用字体 */
+.gmet-trademark {
+  font-family: 'Neulis Sans Black Italic', var(--font-accent);
+  font-weight: 900;
+  font-style: italic;
 }
 
 .language-selector {
@@ -209,6 +216,12 @@
 .button-bold {
   font-family: var(--font-accent);
   font-weight: 900;
+}
+
+/* 如果 button-bold 包含 GMET，使用 gmet-trademark 类覆盖 */
+.button-bold.gmet-trademark {
+  font-family: 'Neulis Sans Black Italic', var(--font-accent);
+  font-style: italic;
 }
 
 .scroll-indicator {
@@ -382,6 +395,13 @@
 .text-bold {
   font-family: var(--font-accent);
   font-weight: 900;
+}
+
+/* 如果 text-bold 包含 GMET，使用 gmet-trademark 类覆盖 */
+.text-bold.gmet-trademark {
+  font-family: 'Neulis Sans Black Italic', var(--font-accent);
+  font-style: italic;
+}
 }
 
 .temperature-visual-container {
