@@ -580,6 +580,8 @@
   height: 685.95px;
   align-self: stretch;
   position: relative;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .smart-hero-background {
@@ -635,6 +637,7 @@
   position: absolute;
   left: 0;
   top: 286.45px;
+  margin-top: 40px;
 }
 
 /* Section 8 - Zero Noise */
