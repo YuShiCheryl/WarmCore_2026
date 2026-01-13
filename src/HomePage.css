@@ -20,7 +20,8 @@
 
 .home-page {
   display: flex;
-  width: 1440px;
+  width: 100%;
+  max-width: 100%;
   flex-direction: column;
   align-items: flex-start;
   background: var(--color-black);
@@ -30,45 +31,45 @@
 /* Header */
 .header {
   display: flex;
-  height: 72px;
-  padding: 22px 38px 22px 80px;
-  justify-content: flex-end;
+  width: 100%;
+  height: 61.2px;
+  padding: 18.7px 5.56% 18.7px 5.56%;
+  justify-content: space-between;
   align-items: center;
-  gap: 239px;
-  align-self: stretch;
   border-bottom: 1px solid var(--color-neutral);
   background: var(--fill-primary);
   position: relative;
 }
 
 .header-logo {
-  width: 250px;
-  height: 22px;
+  width: 212.5px;
+  height: 18.7px;
   overflow: hidden;
   position: absolute;
-  left: 80px;
-  top: 25px;
+  left: 5.56%;
+  top: 21.25px;
 }
 
 .header-nav {
   display: flex;
-  width: 535px;
+  width: auto;
   align-items: center;
-  gap: 48px;
+  gap: 40.8px;
   position: absolute;
-  left: 569px;
-  top: 24px;
-  height: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20.4px;
+  height: 20.4px;
 }
 
 .nav-link {
   color: var(--color-white);
   text-align: center;
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 13.6px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.5px;
+  line-height: 20.4px;
+  letter-spacing: 0.425px;
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
@@ -90,34 +91,34 @@
 }
 
 .language-selector {
-  width: 59px;
-  height: 28px;
+  width: 50.15px;
+  height: 23.8px;
   position: absolute;
-  left: 1343px;
-  top: 22px;
+  right: 5.56%;
+  top: 18.7px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6.8px;
 }
 
 .language-icon {
-  width: 12px;
-  height: 12px;
+  width: 10.2px;
+  height: 10.2px;
   aspect-ratio: 1/1;
 }
 
 .language-text {
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 12px;
+  font-size: 10.2px;
   font-weight: 700;
-  line-height: 25px;
+  line-height: 21.25px;
   letter-spacing: 0;
 }
 
 .language-arrow {
-  width: 8px;
-  height: 8px;
+  width: 6.8px;
+  height: 6.8px;
   transform: rotate(90deg);
   aspect-ratio: 1/1;
 }
@@ -125,78 +126,80 @@
 /* Hero Section */
 .hero-section {
   display: flex;
-  padding: 212px 386px 23px 174px;
+  width: 100%;
+  padding: 180.2px 26.81% 19.55px 12.08%;
   align-items: center;
   align-self: stretch;
   overflow: hidden;
   position: relative;
-  min-height: 740px;
+  min-height: 629px;
 }
 
 .hero-content {
-  width: 880px;
-  height: 505px;
+  width: 61.11%;
+  max-width: 880px;
+  height: 429.25px;
   position: absolute;
-  left: 174px;
-  top: 212px;
+  left: 12.08%;
+  top: 180.2px;
 }
 
 .hero-text-container {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
-  width: 880px;
-  height: 152px;
+  gap: 13.6px;
+  width: 100%;
+  height: 129.2px;
 }
 
 .hero-title {
   width: 880px;
   color: var(--color-white);
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-text-stroke-width: 1px;
+  text-shadow: 0 3.4px 3.4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 0.85px;
   -webkit-text-stroke-color: var(--color-black);
   font-family: var(--font-primary);
-  font-size: 60px;
+  font-size: 51px;
   font-weight: 200;
-  line-height: 76px;
-  letter-spacing: 0.5px;
+  line-height: 64.6px;
+  letter-spacing: 0.425px;
 }
 
 .hero-subtitle {
   width: 714px;
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 24px;
+  font-size: 20.4px;
   font-weight: 400;
-  line-height: 48px;
+  line-height: 40.8px;
   letter-spacing: 0;
   opacity: 0.7;
   position: absolute;
   left: 0;
-  top: 160px;
-  height: 48px;
+  top: 136px;
+  height: 40.8px;
 }
 
 .hero-button {
   display: flex;
-  width: 250px;
-  padding: 12px 20px;
+  width: 212.5px;
+  padding: 10.2px 17px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  border-radius: 50px;
+  gap: 8.5px;
+  border-radius: 42.5px;
   border: 1px solid var(--color-white);
   background: transparent;
   position: absolute;
   left: 0;
-  height: 48px;
+  height: 40.8px;
   color: var(--color-white);
   font-family: var(--font-primary);
-  font-size: 16px;
+  font-size: 13.6px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.5px;
+  line-height: 20.4px;
+  letter-spacing: 0.425px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -206,11 +209,11 @@
 }
 
 .hero-button:first-of-type {
-  top: 248px;
+  top: 210.8px;
 }
 
 .hero-button-secondary {
-  top: 324px;
+  top: 275.4px;
 }
 
 .button-bold {
@@ -229,31 +232,34 @@
 
 .scroll-indicator {
   position: absolute;
-  left: 586px;
-  top: 457px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 388.45px;
   cursor: pointer;
 }
 
 /* Section 1 - Product Showcase */
 .section-product-showcase {
-  height: 595px;
+  width: 100%;
+  height: 505.75px;
   align-self: stretch;
   overflow: hidden;
   position: relative;
 }
 
 .section-title {
-  width: 612px;
+  width: 42.5%;
+  max-width: 612px;
   color: var(--color-white);
   font-family: var(--font-primary);
-  font-size: 64px;
+  font-size: 54.4px;
   font-weight: 200;
-  line-height: 76px;
-  letter-spacing: 0.5px;
+  line-height: 64.6px;
+  letter-spacing: 0.425px;
   position: absolute;
-  left: 171px;
-  top: 15px;
-  height: 76px;
+  left: 11.875%;
+  top: 12.75px;
+  height: 64.6px;
 }
 
 .product-grid {
@@ -261,59 +267,64 @@
 }
 
 .product-image-main {
-  width: 674px;
-  height: 367px;
-  border-radius: 10px;
+  width: 46.81%;
+  max-width: 674px;
+  height: auto;
+  aspect-ratio: 674/367;
+  border-radius: 8.5px;
   position: absolute;
-  left: 180px;
-  top: 112px;
+  left: 12.5%;
+  top: 95.2px;
 }
 
 .product-image-secondary {
-  width: 208px;
-  height: 367px;
-  border-radius: 10px;
+  width: 14.44%;
+  max-width: 208px;
+  height: auto;
+  aspect-ratio: 208/367;
+  border-radius: 8.5px;
   position: absolute;
-  top: 112px;
+  top: 95.2px;
 }
 
 .product-image-secondary:nth-of-type(2) {
-  left: 875px;
+  left: 60.76%;
 }
 
 .product-image-secondary:nth-of-type(3) {
-  left: 1100px;
+  left: 76.39%;
 }
 
 .section-overlay-text {
-  width: 557px;
+  width: 38.68%;
+  max-width: 557px;
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 48px;
+  font-size: 40.8px;
   font-weight: 400;
-  line-height: 72px;
+  line-height: 61.2px;
   letter-spacing: 0;
   opacity: 0.46;
   position: absolute;
-  left: 275px;
-  top: 224px;
-  height: 144px;
+  left: 19.1%;
+  top: 190.4px;
+  height: 122.4px;
 }
 
 .navigation-button {
   display: flex;
-  width: 34px;
-  padding: 7px 14px;
+  width: 28.9px;
+  padding: 5.95px 11.9px;
   justify-content: center;
   align-items: center;
-  gap: 4px;
-  border-radius: 40px;
+  gap: 3.4px;
+  border-radius: 34px;
   background: var(--color-gray-light);
   border: none;
   position: absolute;
-  left: 786px;
-  top: 410px;
-  height: 34px;
+  left: 54.58%;
+  top: 348.5px;
+  height: 28.9px;
   cursor: pointer;
 }
 
@@ -321,46 +332,50 @@
   color: var(--color-white);
   text-align: center;
   font-family: 'SF Pro', -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 12.75px;
   font-weight: 400;
-  line-height: 20px;
-  letter-spacing: -0.23px;
+  line-height: 17px;
+  letter-spacing: -0.1955px;
 }
 
 /* Section 2 - Comfort */
 .section-comfort {
-  height: 602px;
+  width: 100%;
+  height: 511.7px;
   align-self: stretch;
   overflow: hidden;
   position: relative;
 }
 
 .comfort-image {
-  width: 806px;
-  height: 355px;
+  width: 55.97%;
+  max-width: 806px;
+  height: auto;
   aspect-ratio: 806/355;
   position: absolute;
-  left: 603px;
-  top: 108px;
+  left: 41.88%;
+  top: 91.8px;
 }
 
 .comfort-text {
-  width: 557px;
+  width: 38.68%;
+  max-width: 557px;
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 48px;
+  font-size: 40.8px;
   font-weight: 400;
-  line-height: 72px;
+  line-height: 61.2px;
   letter-spacing: 0;
   position: absolute;
-  left: 183px;
-  top: 219px;
-  height: 144px;
+  left: 12.71%;
+  top: 186.15px;
+  height: 122.4px;
 }
 
 /* Section 3 - Temperature Control */
 .section-temperature {
-  height: 966px;
+  width: 100%;
+  height: 821.1px;
   align-self: stretch;
   overflow: hidden;
   position: relative;
@@ -370,29 +385,30 @@
   color: var(--color-white);
   text-align: center;
   font-family: var(--font-secondary);
-  font-size: 36px;
+  font-size: 30.6px;
   font-weight: 400;
-  line-height: 48px;
+  line-height: 40.8px;
   letter-spacing: 0;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 86px;
+  top: 73.1px;
   width: 324px;
-  height: 96px;
+  height: 81.6px;
 }
 
 .section-description {
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 16px;
+  font-size: 13.6px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 27.2px;
   position: absolute;
-  left: 353px;
-  top: 207px;
-  width: 733px;
-  height: 96px;
+  left: 24.51%;
+  top: 175.95px;
+  width: 50.9%;
+  max-width: 733px;
+  height: 81.6px;
 }
 
 .text-bold {
@@ -405,19 +421,20 @@
   font-family: 'Neulis Sans Black Italic', var(--font-accent);
   font-style: italic;
 }
-}
 
 .temperature-visual-container {
-  width: 1236px;
-  height: 431px;
+  width: 85.83%;
+  max-width: 1236px;
+  height: auto;
+  aspect-ratio: 1236/431;
   position: absolute;
-  left: 102px;
-  top: 397px;
+  left: 7.08%;
+  top: 337.45px;
 }
 
 .temperature-visual-background {
-  width: 1236px;
-  height: 431px;
+  width: 100%;
+  height: 100%;
   background: var(--fill-secondary);
   position: absolute;
   left: 0;
@@ -425,30 +442,32 @@
 }
 
 .temperature-image-left {
-  width: 561px;
-  height: 388px;
+  width: 45.36%;
+  max-width: 561px;
+  height: auto;
   aspect-ratio: 561/388;
   position: absolute;
-  left: 31px;
-  top: 23px;
+  left: 2.51%;
+  top: 19.55px;
 }
 
 .temperature-image-right {
-  width: 562px;
-  height: 382px;
+  width: 45.45%;
+  max-width: 562px;
+  height: auto;
   aspect-ratio: 281/191;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3.4px 3.4px 0 rgba(0, 0, 0, 0.25);
   position: absolute;
-  left: 645px;
-  top: 23px;
+  left: 44.79%;
+  top: 19.55px;
 }
 
 .section-navigation {
   position: absolute;
-  bottom: 63px;
-  right: 186px;
+  bottom: 53.55px;
+  right: 158.1px;
   display: flex;
-  gap: 12px;
+  gap: 10.2px;
 }
 
 .nav-arrow {
@@ -462,7 +481,8 @@
 
 /* Section 4 - Even Temperature */
 .section-even-temperature {
-  height: 1127px;
+  width: 100%;
+  height: 957.95px;
   align-self: stretch;
   overflow: hidden;
   position: relative;
@@ -470,20 +490,22 @@
 
 .section-even-temperature .section-heading {
   width: 332px;
-  top: 16px;
+  top: 13.6px;
 }
 
 .section-even-temperature .section-description {
-  top: 115px;
-  height: 490px;
+  top: 97.75px;
+  height: 416.5px;
 }
 
 .material-showcase {
-  width: 821px;
-  height: 768px;
+  width: 57.01%;
+  max-width: 821px;
+  height: auto;
+  aspect-ratio: 821/768;
   position: absolute;
-  left: 309px;
-  top: 281px;
+  left: 21.46%;
+  top: 238.85px;
 }
 
 .material-image {
@@ -491,69 +513,77 @@
 }
 
 .material-image-1 {
-  width: 469px;
-  height: 297px;
+  width: 57.13%;
+  max-width: 469px;
+  height: auto;
   aspect-ratio: 469/297;
   left: 0;
-  top: 74px;
+  top: 62.9px;
 }
 
 .material-image-2 {
-  width: 343px;
-  height: 515px;
+  width: 41.78%;
+  max-width: 343px;
+  height: auto;
   aspect-ratio: 343/515;
-  left: 478px;
+  left: 58.28%;
   top: 0;
 }
 
 .material-image-3 {
-  width: 282px;
-  height: 366px;
+  width: 34.35%;
+  max-width: 282px;
+  height: auto;
   aspect-ratio: 47/61;
-  left: 170px;
-  top: 402px;
+  left: 20.71%;
+  top: 341.7px;
 }
 
 /* Section 5 - Dual Zone */
 .section-dual-zone {
-  height: 1193px;
+  width: 100%;
+  height: 1014.05px;
   align-self: stretch;
   overflow: hidden;
   position: relative;
 }
 
 .section-dual-zone .section-heading {
-  width: 638px;
-  top: 51px;
-  height: 96px;
+  width: 44.31%;
+  max-width: 638px;
+  top: 43.35px;
+  height: 81.6px;
 }
 
 .section-dual-zone .section-description {
-  width: 735px;
-  height: 90px;
-  left: 344px;
-  top: 185px;
+  width: 51.04%;
+  max-width: 735px;
+  height: 76.5px;
+  left: 23.89%;
+  top: 157.25px;
 }
 
 .dual-zone-image {
-  width: 787px;
-  height: 787px;
+  width: 54.65%;
+  max-width: 787px;
+  height: auto;
   aspect-ratio: 1/1;
   position: absolute;
-  left: 326px;
-  top: 351px;
+  left: 22.64%;
+  top: 298.35px;
 }
 
 /* Section 6 - Smart Hero */
 .section-smart-hero {
-  height: 807px;
+  width: 100%;
+  height: 685.95px;
   align-self: stretch;
   position: relative;
 }
 
 .smart-hero-background {
-  width: 1440px;
-  height: 807px;
+  width: 100%;
+  height: auto;
   aspect-ratio: 480/269;
   position: absolute;
   left: 0;
@@ -561,265 +591,291 @@
 }
 
 .smart-hero-title {
-  width: 900px;
+  width: 62.5%;
+  max-width: 900px;
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 48px;
+  font-size: 40.8px;
   font-weight: 400;
-  line-height: 72px;
+  line-height: 61.2px;
   letter-spacing: 0;
   position: absolute;
-  left: 180px;
-  top: 441px;
-  height: 144px;
+  left: 12.5%;
+  top: 374.85px;
+  height: 122.4px;
 }
 
 /* Section 7 - Sleep Rhythm */
 .section-sleep-rhythm {
-  height: 829px;
+  width: 100%;
+  height: 704.65px;
   align-self: stretch;
   overflow: hidden;
   position: relative;
 }
 
 .section-sleep-rhythm .section-heading {
-  width: 684px;
-  height: 139px;
-  top: 73px;
+  width: 47.5%;
+  max-width: 684px;
+  height: 118.15px;
+  top: 62.05px;
 }
 
 .section-description-center {
   text-align: center;
-  height: 490px;
-  top: 191px;
+  height: 416.5px;
+  top: 162.35px;
 }
 
 .sleep-rhythm-image {
-  width: 1440px;
-  height: 492px;
+  width: 100%;
+  height: auto;
   aspect-ratio: 120/41;
   position: absolute;
   left: 0;
-  top: 337px;
+  top: 286.45px;
 }
 
 /* Section 8 - Zero Noise */
 .section-zero-noise {
-  height: 962px;
+  width: 100%;
+  height: 817.7px;
   align-self: stretch;
   overflow: hidden;
   position: relative;
 }
 
 .section-zero-noise .section-heading {
-  width: 730px;
-  top: 125px;
-  height: 96px;
+  width: 50.69%;
+  max-width: 730px;
+  top: 106.25px;
+  height: 81.6px;
 }
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(2, 377px);
-  gap: 37px 39px;
+  grid-template-columns: repeat(2, 26.18%);
+  gap: 31.45px 2.71%;
   position: absolute;
-  left: 323px;
-  top: 258px;
+  left: 22.43%;
+  top: 219.3px;
+  width: 55.14%;
+  max-width: 793px;
 }
 
 .feature-image {
-  width: 377px;
-  height: 254px;
-  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 377/254;
+  border-radius: 8.5px;
 }
 
 /* Section 9 - Safety Hero */
 .section-safety-hero {
-  height: 735px;
+  width: 100%;
+  height: 624.75px;
   align-self: stretch;
   position: relative;
 }
 
 .safety-hero-background {
-  width: 735px;
-  height: 1440px;
-  transform: rotate(-90deg);
+  width: 51.04%;
+  max-width: 735px;
+  height: auto;
   aspect-ratio: 49/96;
+  transform: rotate(-90deg);
   position: absolute;
   left: 0;
   top: 0;
 }
 
 .safety-hero-title {
-  width: 900px;
+  width: 62.5%;
+  max-width: 900px;
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 48px;
+  font-size: 40.8px;
   font-weight: 400;
-  line-height: 72px;
+  line-height: 61.2px;
   letter-spacing: 0;
   position: absolute;
-  left: 180px;
-  top: 247px;
-  height: 144px;
+  left: 12.5%;
+  top: 209.95px;
+  height: 122.4px;
 }
 
 /* Section 10 - Safety Features */
 .section-safety-features {
   display: flex;
-  padding: 159px 231px 64px 231px;
+  width: 100%;
+  padding: 135.15px 16.04% 54.4px 16.04%;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  gap: 67px;
+  gap: 56.95px;
   align-self: stretch;
   overflow: hidden;
   position: relative;
-  min-height: 1245px;
+  min-height: 1058.25px;
 }
 
 .section-safety-features .section-heading {
   align-self: stretch;
   position: absolute;
-  left: 355px;
-  top: 159px;
-  width: 730px;
-  height: 96px;
+  left: 24.65%;
+  top: 135.15px;
+  width: 50.69%;
+  max-width: 730px;
+  height: 81.6px;
 }
 
 .safety-features-image {
-  width: 978px;
-  height: 859px;
+  width: 67.92%;
+  max-width: 978px;
+  height: auto;
   aspect-ratio: 978/859;
   position: absolute;
-  left: 231px;
-  top: 322px;
+  left: 16.04%;
+  top: 273.7px;
 }
 
 /* Section 11 - Product Comparison */
 .section-product-comparison {
-  height: 977px;
+  width: 100%;
+  height: 830.45px;
   align-self: stretch;
   overflow: hidden;
   position: relative;
 }
 
 .section-product-comparison .section-heading {
-  width: 730px;
-  top: 52px;
-  height: 96px;
+  width: 50.69%;
+  max-width: 730px;
+  top: 44.2px;
+  height: 81.6px;
 }
 
 .product-comparison-grid {
   display: flex;
-  gap: 27px;
+  gap: 22.95px;
   position: absolute;
-  left: 173px;
-  top: 201px;
+  left: 12.01%;
+  top: 170.85px;
+  width: 76%;
+  max-width: 1094px;
+  justify-content: space-between;
 }
 
 .comparison-image {
-  width: 251px;
-  height: 394px;
-  border-radius: 10px;
+  width: 22.95%;
+  max-width: 251px;
+  height: auto;
+  aspect-ratio: 251/394;
+  border-radius: 8.5px;
+  flex: 1;
 }
 
 .comparison-subtitle {
-  width: 913px;
+  width: 63.4%;
+  max-width: 913px;
   color: var(--color-white);
   text-align: center;
   font-family: var(--font-secondary);
-  font-size: 24px;
+  font-size: 20.4px;
   font-weight: 400;
-  line-height: 48px;
+  line-height: 40.8px;
   letter-spacing: 0;
   position: absolute;
-  left: 263px;
-  top: 764px;
-  height: 96px;
+  left: 18.26%;
+  top: 649.4px;
+  height: 81.6px;
 }
 
 /* Footer */
 .footer {
-  height: 580px;
+  width: 100%;
+  height: 493px;
   align-self: stretch;
   position: relative;
 }
 
 .footer-divider {
-  width: 1333px;
+  width: 92.57%;
+  max-width: 1333px;
   height: 1px;
   background: var(--color-white);
   position: absolute;
-  left: 46px;
-  top: 60px;
+  left: 3.19%;
+  top: 51px;
 }
 
 .footer-content {
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  padding: 0 70px;
-  margin-top: 125px;
+  padding: 0 4.86%;
+  margin-top: 106.25px;
 }
 
 .footer-newsletter {
   position: absolute;
-  left: 70px;
-  top: 165px;
+  left: 4.86%;
+  top: 140.25px;
 }
 
 .footer-language-selector {
-  width: 59px;
-  height: 28px;
+  width: 50.15px;
+  height: 23.8px;
   position: absolute;
-  left: 70px;
-  top: 530px;
+  left: 59.5px;
+  top: 450.5px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6.8px;
 }
 
 .footer-language-icon {
-  width: 12px;
-  height: 12px;
+  width: 10.2px;
+  height: 10.2px;
   aspect-ratio: 1/1;
 }
 
 .footer-language-text {
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 12px;
+  font-size: 10.2px;
   font-weight: 700;
-  line-height: 25px;
+  line-height: 21.25px;
   letter-spacing: 0;
 }
 
 .footer-language-arrow {
-  width: 8px;
-  height: 8px;
+  width: 6.8px;
+  height: 6.8px;
   transform: rotate(90deg);
   aspect-ratio: 1/1;
 }
 
 .footer-links {
   display: flex;
-  gap: 169px;
+  gap: 143.65px;
   position: absolute;
-  left: 886px;
-  top: 125px;
+  left: 61.53%;
+  top: 106.25px;
 }
 
 .footer-column {
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 11.05px;
 }
 
 .footer-column-title {
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 15px;
+  font-size: 12.75px;
   font-weight: 700;
-  line-height: 25px;
+  line-height: 21.25px;
   letter-spacing: 0;
 }
 
@@ -833,9 +889,9 @@
 .footer-column-links a {
   color: var(--color-gray);
   font-family: var(--font-secondary);
-  font-size: 12px;
+  font-size: 10.2px;
   font-weight: 500;
-  line-height: 35px;
+  line-height: 29.75px;
   letter-spacing: 0;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -848,13 +904,13 @@
 .footer-copyright {
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 12px;
+  font-size: 10.2px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 25.5px;
   letter-spacing: 0;
   position: absolute;
-  left: 1215px;
-  top: 528px;
+  right: 4.86%;
+  top: 448.8px;
 }
 
 /* Responsive adjustments */
