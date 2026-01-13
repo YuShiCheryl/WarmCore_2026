@@ -12,6 +12,29 @@
   --font-accent: 'Font1', -apple-system, Roboto, Helvetica, sans-serif;
 }
 
+/* Scroll reveal animations - 不改变最终排版，仅在出现时做轻微位移与透明度变化 */
+[data-animate] {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+  transition-delay: var(--animation-delay, 0s);
+}
+
+[data-animate="fade-right"] {
+  transform: translate3d(24px, 0, 0);
+}
+
+[data-animate="fade-left"] {
+  transform: translate3d(-24px, 0, 0);
+}
+
+.is-visible[data-animate] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 * {
   margin: 0;
   padding: 0;

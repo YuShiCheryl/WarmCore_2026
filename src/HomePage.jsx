@@ -1,7 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './HomePage.css';
 
 const HomePage = () => {
+  useEffect(() => {
+    const animatedElements = document.querySelectorAll('[data-animate]');
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.18,
+        rootMargin: '0px 0px -5% 0px'
+      }
+    );
+
+    animatedElements.forEach(el => observer.observe(el));
+
+    return () => {
+      animatedElements.forEach(el => observer.unobserve(el));
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <div className="home-page">
       {/* Header */}
@@ -37,42 +62,64 @@ const HomePage = () => {
       <section className="hero-section">
         <div className="hero-content">
           <div className="hero-text-container">
-            <h1 className="hero-title">
+            <h1 className="hero-title" data-animate="fade-up">
               专注微气候控制，<br />给用户恰到好处的温度。
             </h1>
-            <p className="hero-subtitle">2022北京冬季奥运会指定供应商</p>
+            <p className="hero-subtitle" data-animate="fade-up" style={{ '--animation-delay': '0.1s' }}>
+              2022北京冬季奥运会指定供应商
+            </p>
           </div>
-          <button className="hero-button">了解智能深睡毯Pro3.0</button>
-          <button className="hero-button hero-button-secondary">
+          <button className="hero-button" data-animate="fade-up" style={{ '--animation-delay': '0.15s' }}>
+            了解智能深睡毯Pro3.0
+          </button>
+          <button
+            className="hero-button hero-button-secondary"
+            data-animate="fade-up"
+            style={{ '--animation-delay': '0.25s' }}
+          >
             了解 <span className="button-bold gmet-trademark">GMET</span>®专利技术
           </button>
         </div>
-          <svg className="scroll-indicator" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          className="scroll-indicator"
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
             <path d="M16 24L24 32M24 32L32 24M24 32V16M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z" stroke="#B3B3B3" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
       </section>
 
       {/* Section 1 - Product Showcase */}
       <section className="section-product-showcase">
-        <h2 className="section-title">智能深睡毯Pro3.0</h2>
+        <h2 className="section-title" data-animate="fade-up">
+          智能深睡毯Pro3.0
+        </h2>
         <div className="product-grid">
-          <img 
+          <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/e91a8dd5219358d384d52934869cb3da834d35d1?width=1348" 
             alt="Product main" 
             className="product-image-main"
+            data-animate="fade-up"
           />
-          <img 
+          <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/3d8275ffb61e126c4128d182c73770d95b74811b?width=416" 
             alt="Product detail 1" 
             className="product-image-secondary"
+            data-animate="fade-right"
           />
-          <img 
+          <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/b839d7df956f24bc1bd5921216d612e11829102a?width=416" 
             alt="Product detail 2" 
             className="product-image-secondary"
+            data-animate="fade-left"
           />
         </div>
-        <p className="section-overlay-text">前所未有的舒适体感，<br />睡眠新科技。</p>
+        <p className="section-overlay-text" data-animate="fade-up" style={{ '--animation-delay': '0.1s' }}>
+          前所未有的舒适体感，<br />睡眠新科技。
+        </p>
         <button className="navigation-button">
           <span className="navigation-symbol">&gt;</span>
         </button>
@@ -80,12 +127,15 @@ const HomePage = () => {
 
       {/* Section 2 - Comfort Experience */}
       <section className="section-comfort">
-        <img 
+        <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/dec1fcb8d8023fa59af7174fb362bbd95312ecbc?width=1612" 
           alt="Comfort experience" 
           className="comfort-image"
+          data-animate="fade-left"
         />
-        <p className="comfort-text">前所未有的舒适体感，<br />睡眠新科技。</p>
+        <p className="comfort-text" data-animate="fade-up">
+          前所未有的舒适体感，<br />睡眠新科技。
+        </p>
       </section>
 
       {/* Section 3 - Temperature Control */}
