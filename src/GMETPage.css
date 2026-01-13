@@ -1,0 +1,676 @@
+/* GMET Page Styles */
+.gmet-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* 仅 GMET 页面：GMET 字样使用 Neulis Neue Black Italic */
+.gmet-page .gmet-trademark {
+  font-family: 'Neulis Neue Black Italic', 'Neulis Sans Black Italic', var(--font-accent);
+  font-weight: 900;
+  font-style: italic;
+}
+.gmet-content-scaled {
+  width: calc(100% / 0.85);
+  transform: scale(0.85);
+  transform-origin: top center;
+  margin: 0 auto;
+}
+
+/* Section 2-5 等比例缩小到 90%（不影响 Header / Section1 / Footer） */
+.gmet-sections-2-5 {
+  zoom: 0.9;
+}
+
+@supports not (zoom: 1) {
+  .gmet-sections-2-5 {
+    transform: scale(0.9);
+    transform-origin: top center;
+  }
+}
+/* Header */
+.gmet-header {
+  display: flex;
+  height: 72px;
+  padding: 22px 38px 22px 80px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 239px;
+  width: 100%;
+  max-width: 1440px;
+  border-bottom: 1px solid #DEE5ED;
+  background: rgba(120, 120, 120, 0.20);
+  position: relative;
+}
+
+.gmet-header-logo-link {
+  position: absolute;
+  left: 80px;
+  top: 25px;
+}
+
+.gmet-header-logo {
+  width: 250px;
+  height: 22px;
+  overflow: hidden;
+}
+
+.gmet-header-nav {
+  display: flex;
+  width: 535px;
+  align-items: center;
+  gap: 48px;
+  position: absolute;
+  left: 569px;
+  top: 24px;
+  height: 24px;
+}
+
+.gmet-nav-link {
+  color: #fff;
+  text-align: center;
+  font-family: 'DM Sans', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.gmet-nav-link:hover {
+  opacity: 0.8;
+}
+
+.gmet-nav-link-bold {
+  font-family: 'Neulis Sans', -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 900;
+}
+
+.gmet-language-selector {
+  width: 59px;
+  height: 28px;
+  position: absolute;
+  right: 38px;
+  top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gmet-language-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.gmet-language-text {
+  color: #fff;
+  font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+.gmet-language-arrow {
+  width: 8px;
+  height: 8px;
+  transform: rotate(90deg);
+}
+
+/* S1 - Hero Section */
+.gmet-hero {
+  height: 444.55px;
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+}
+
+.gmet-hero-bg {
+  width: 100%;
+  height: 444.55px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.gmet-hero-title {
+  width: 815.15px;
+  color: #fff;
+  font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 51px;
+  font-weight: 400;
+  line-height: 64.6px;
+  letter-spacing: 0;
+  position: absolute;
+  left: 78.2px;
+  top: 232.05px;
+  height: 132.6px;
+}
+
+.gmet-hero-title-bold {
+  font-family: 'Neulis Sans', -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 64.6px;
+}
+
+/* S2 - Introduction Section */
+.gmet-intro {
+  display: flex;
+  height: 721px;
+  padding: 0 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+}
+
+.gmet-intro-text-card {
+  display: flex;
+  padding: 67px 34px 24px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 28px;
+  border-radius: 10px;
+  border: 0.2px solid rgba(255, 255, 255, 0.50);
+  background: rgba(120, 120, 120, 0.20);
+  position: relative;
+  max-width: 625px;
+}
+
+.gmet-intro-text {
+  color: #fff;
+  font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.gmet-intro-text:last-of-type {
+  margin-bottom: 0;
+}
+
+.gmet-intro-bold {
+  font-family: 'Neulis Sans', -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 900;
+}
+
+.gmet-intro-structure {
+  width: 100%;
+  max-width: 610px;
+  height: auto;
+  mix-blend-mode: lighten;
+  margin-top: 28px;
+}
+
+.gmet-intro-image {
+  width: 619px;
+  height: 645px;
+  border-radius: 10px;
+  border: 0.2px solid rgba(255, 255, 255, 0.50);
+  object-fit: cover;
+}
+
+/* S3 - Specifications Grid */
+.gmet-specs {
+  display: grid;
+  width: 100%;
+  max-width: 1268px;
+  padding: 48px 59px;
+  row-gap: 88px;
+  column-gap: 160px;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 10px;
+  border: 0.2px solid rgba(255, 255, 255, 0.50);
+  background: rgba(120, 120, 120, 0.20);
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; /* Section 3 整体左右居中 */
+}
+
+.gmet-spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.gmet-spec-value {
+  color: #fff;
+  font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 76px;
+  letter-spacing: 0;
+}
+
+.gmet-spec-label {
+  color: #fff;
+  font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 0;
+}
+
+/* S4 - Comparison Section */
+.gmet-comparison {
+  height: 481px;
+  width: 100%;
+  max-width: 1340px;
+  position: relative;
+  padding: 0 30px;
+  margin-top: 60px;   /* Section 4 上下加 gap */
+  margin-bottom: 60px;
+}
+
+.gmet-comparison-image {
+  width: 415px;
+  height: 318px;
+  transform: rotate(90deg);
+  border-radius: 10px;
+  border: 0.2px solid rgba(255, 255, 255, 0.50);
+  position: absolute;
+  left: 50px;
+  top: 33px;
+  object-fit: cover;
+}
+
+.gmet-comparison-text {
+  width: calc(100% - 520px - 30px);
+  max-width: 869px;
+  color: #fff;
+  font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0;
+  position: absolute;
+  left: 480px; /* 拉宽图片与文字之间的 gap */
+  top: 63px;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.gmet-comparison-text p {
+  margin-bottom: 20px;
+}
+
+.gmet-comparison-text p:last-child {
+  margin-bottom: 0;
+}
+
+.gmet-comparison-bold {
+  font-family: 'Neulis Sans', -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 900;
+}
+
+/* S5 - Features Grid */
+.gmet-features {
+  display: grid;
+  row-gap: 18px;
+  column-gap: 18px;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, 400px);
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 30px;
+  position: relative;
+  justify-content: center;
+  align-content: start;
+}
+
+.gmet-feature-card {
+  width: 400px;
+  height: 180px;
+  border-radius: 10px;
+  border: 0.2px solid rgba(255, 255, 255, 0.50);
+  background: rgba(120, 120, 120, 0.20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.gmet-feature-title {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 76px;
+  letter-spacing: 0;
+}
+
+/* Footer */
+.gmet-footer {
+  height: 580px;
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.gmet-footer-divider {
+  width: calc(100% - 92px);
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 46px;
+  top: 60px;
+}
+
+.gmet-footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 125px 70px 0;
+  position: relative;
+}
+
+.gmet-footer-newsletter {
+  width: 193px;
+}
+
+.gmet-footer-newsletter-title {
+  color: #fff;
+  font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0;
+  margin-bottom: 40px;
+}
+
+.gmet-footer-newsletter-input {
+  position: relative;
+}
+
+.gmet-email-input {
+  width: 150px;
+  background: transparent;
+  border: none;
+  border-bottom: 0.5px solid #fff;
+  color: #AEAEB2;
+  font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 10px;
+  padding: 8px 0;
+  outline: none;
+}
+
+.gmet-email-input::placeholder {
+  color: #AEAEB2;
+}
+
+.gmet-footer-links {
+  display: flex;
+  gap: 169px;
+}
+
+.gmet-footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.gmet-footer-column-title {
+  color: #fff;
+  font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+.gmet-footer-column-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.gmet-footer-column-links li {
+  margin: 0;
+}
+
+.gmet-footer-column-links a {
+  color: #8E8E93;
+  font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.gmet-footer-column-links a:hover {
+  opacity: 0.8;
+}
+
+.gmet-footer-language-selector {
+  width: 59px;
+  height: 28px;
+  position: absolute;
+  left: 70px;
+  bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gmet-footer-language-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.gmet-footer-language-text {
+  color: #fff;
+  font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+.gmet-footer-language-arrow {
+  width: 8px;
+  height: 8px;
+  transform: rotate(90deg);
+}
+
+.gmet-footer-copyright {
+  color: #fff;
+  font-family: Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+  position: absolute;
+  right: 70px;
+  bottom: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .gmet-header {
+    padding: 22px 30px 22px 60px;
+  }
+
+  .gmet-header-logo-link {
+    left: 60px;
+  }
+
+  .gmet-header-nav {
+    left: 400px;
+    gap: 32px;
+  }
+
+  .gmet-hero-title {
+    left: 60px;
+    width: calc(100% - 120px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .gmet-intro {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 30px;
+  }
+
+  .gmet-intro-text-card {
+    max-width: 100%;
+  }
+
+  .gmet-intro-image {
+    width: 100%;
+    max-width: 619px;
+    height: auto;
+  }
+
+  .gmet-comparison {
+    height: auto;
+    padding: 40px 30px;
+  }
+
+  .gmet-comparison-image {
+    position: static;
+    transform: rotate(0deg);
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .gmet-comparison-text {
+    position: static;
+    width: 100%;
+  }
+
+  .gmet-specs {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 40px 30px;
+  }
+
+  .gmet-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .gmet-feature-card {
+    width: 100%;
+  }
+
+  .gmet-footer-links {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gmet-header {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .gmet-header-logo-link,
+  .gmet-header-nav,
+  .gmet-language-selector {
+    position: static;
+  }
+
+  .gmet-header-nav {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .gmet-hero-title {
+    font-size: 40px;
+    line-height: 50px;
+    left: 30px;
+    top: 150px;
+    width: calc(100% - 60px);
+  }
+
+  .gmet-hero-title-bold {
+    font-size: 50px;
+  }
+
+  .gmet-intro-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .gmet-spec-value {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .gmet-spec-label {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .gmet-specs {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .gmet-comparison-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .gmet-features {
+    grid-template-columns: 1fr;
+  }
+
+  .gmet-feature-title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .gmet-footer-content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px 40px 80px;
+  }
+
+  .gmet-footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .gmet-footer-copyright {
+    position: static;
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 40px;
+  }
+
+  .gmet-footer-language-selector {
+    left: 40px;
+  }
+}

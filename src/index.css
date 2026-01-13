@@ -48,6 +48,15 @@
   font-display: swap;
 }
 
+/* Neulis Neue Black Italic（GMETPage 使用） */
+@font-face {
+  font-family: 'Neulis Neue Black Italic';
+  src: url('/fonts/fonnts.com-Neulis_Neue_Black_Italic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* 保留 Google Fonts 作为后备字体（可选，如果不需要可以删除） */
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=DM+Sans:wght@200;400&display=swap'); */
 

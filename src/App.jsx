@@ -1,12 +1,18 @@
-import HomePage from './HomePage'
-import './App.css'
+import HomePage from './HomePage';
+import TechnologyPage from './TechnologyPage';
+import GMETPage from './GMETPage';
+import './App.css';
 
 function App() {
+  const pathname = window.location.pathname;
+  const isTechnology = pathname === '/technology';
+  const isGMET = pathname === '/gmet-tech';
+
   return (
     <div className="app-container">
-      <HomePage />
+      {isGMET ? <GMETPage /> : isTechnology ? <TechnologyPage /> : <HomePage />}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

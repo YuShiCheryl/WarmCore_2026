@@ -1,0 +1,949 @@
+:root {
+  --color-black: #000;
+  --color-white: #FFF;
+  --color-neutral: #DEE5ED;
+  --color-gray: #8E8E93;
+  --color-gray-light: #999;
+  --color-gray-muted: #AEAEB2;
+  --fill-primary: rgba(120, 120, 120, 0.20);
+  --fill-secondary: rgba(120, 120, 128, 0.16);
+  --font-primary: 'Font1', -apple-system, Roboto, Helvetica, sans-serif;
+  --font-secondary: 'Font1', -apple-system, Roboto, Helvetica, sans-serif;
+  --font-accent: 'Font1', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+/* Scroll reveal animations - 不改变最终排版，仅在出现时做轻微位移与透明度变化 */
+[data-animate] {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+  transition-delay: var(--animation-delay, 0s);
+}
+
+[data-animate="fade-right"] {
+  transform: translate3d(24px, 0, 0);
+}
+
+[data-animate="fade-left"] {
+  transform: translate3d(-24px, 0, 0);
+}
+
+.is-visible[data-animate] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-page {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--color-black);
+  position: relative;
+}
+
+/* Header */
+.header {
+  display: flex;
+  width: 100%;
+  height: 61.2px;
+  padding: 18.7px 5.56% 18.7px 5.56%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-neutral);
+  background: var(--fill-primary);
+  position: relative;
+}
+
+.header-logo {
+  width: 212.5px;
+  height: 18.7px;
+  overflow: hidden;
+  position: absolute;
+  left: 5.56%;
+  top: 21.25px;
+}
+
+.header-nav {
+  display: flex;
+  width: auto;
+  align-items: center;
+  gap: 40.8px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20.4px;
+  height: 20.4px;
+}
+
+.nav-link {
+  color: var(--color-white);
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.4px;
+  letter-spacing: 0.425px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.nav-link-bold {
+  font-family: var(--font-accent);
+  font-weight: 900;
+}
+
+/* GMET 商标专用字体 */
+.gmet-trademark {
+  font-family: 'Neulis Sans Black Italic', var(--font-accent);
+  font-weight: 900;
+  font-style: italic;
+}
+
+.language-selector {
+  width: 50.15px;
+  height: 23.8px;
+  position: absolute;
+  right: 5.56%;
+  top: 18.7px;
+  display: flex;
+  align-items: center;
+  gap: 6.8px;
+}
+
+.language-icon {
+  width: 10.2px;
+  height: 10.2px;
+  aspect-ratio: 1/1;
+}
+
+.language-text {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 21.25px;
+  letter-spacing: 0;
+}
+
+.language-arrow {
+  width: 6.8px;
+  height: 6.8px;
+  transform: rotate(0deg);
+  aspect-ratio: 1/1;
+}
+
+/* Hero Section - Scaled to 85% */
+.hero-section {
+  display: flex;
+  width: 100%;
+  padding: 153.17px 26.81% 16.62px 12.08%;
+  align-items: center;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+  min-height: 534.65px;
+}
+
+.hero-content {
+  width: 61.11%;
+  max-width: 748px;
+  height: 364.86px;
+  position: absolute;
+  left: 12.08%;
+  top: 153.17px;
+}
+
+.hero-text-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11.56px;
+  width: 100%;
+  height: 109.82px;
+}
+
+.hero-title {
+  width: 748px;
+  color: var(--color-white);
+  text-shadow: 0 2.89px 2.89px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 0.72px;
+  -webkit-text-stroke-color: var(--color-black);
+  font-family: var(--font-primary);
+  font-size: 42.5px;
+  font-weight: 200;
+  line-height: 54.91px;
+  letter-spacing: 0.36px;
+}
+
+.hero-subtitle {
+  width: 606.9px;
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 34.68px;
+  letter-spacing: 0;
+  opacity: 0.7;
+  position: absolute;
+  left: 0;
+  top: 115.6px;
+  height: 34.68px;
+}
+
+.hero-button {
+  display: flex;
+  width: 180.63px;
+  padding: 8.67px 14.45px;
+  justify-content: center;
+  align-items: center;
+  gap: 7.23px;
+  border-radius: 36.13px;
+  border: 1px solid var(--color-white);
+  background: transparent;
+  position: absolute;
+  left: 0;
+  height: 34.68px;
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  font-size: 11.05px;
+  font-weight: 400;
+  line-height: 17.34px;
+  letter-spacing: 0.36px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hero-button:first-of-type {
+  top: 179.18px;
+}
+
+.hero-button-secondary {
+  top: 234.09px;
+}
+
+.button-bold {
+  font-family: var(--font-accent);
+  font-weight: 900;
+}
+
+/* 如果 button-bold 包含 GMET，使用 gmet-trademark 类覆盖 */
+.button-bold.gmet-trademark {
+  font-family: 'Neulis Sans Black Italic', var(--font-accent);
+  font-style: italic;
+  display: inline;
+  margin-left: -0.2em;
+  margin-right: -0.2em;
+}
+
+.scroll-indicator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scale(0.85);
+  top: 483.18px;
+  cursor: pointer;
+  /* 相对于hero-section居中，而不是hero-content */
+}
+
+/* Section 1 - Product Showcase - Scaled to 85% */
+.section-product-showcase {
+  width: 100%;
+  height: 429.89px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-title {
+  width: 42.5%;
+  max-width: 520.2px;
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  font-size: 42.5px;
+  font-weight: 200;
+  line-height: 54.91px;
+  letter-spacing: 0.36px;
+  position: absolute;
+  left: 11.875%;
+  top: 10.84px;
+  height: 54.91px;
+}
+
+.product-grid {
+  position: relative;
+}
+
+.product-image-main {
+  width: 46.81%;
+  max-width: 572.9px;
+  height: auto;
+  aspect-ratio: 674/367;
+  border-radius: 7.23px;
+  position: absolute;
+  left: 12.5%;
+  top: 80.92px;
+}
+
+.product-image-secondary {
+  width: 14.44%;
+  max-width: 176.8px;
+  height: auto;
+  aspect-ratio: 208/367;
+  border-radius: 7.23px;
+  position: absolute;
+  top: 80.92px;
+}
+
+.product-image-secondary:nth-of-type(2) {
+  left: 60.76%;
+}
+
+.product-image-secondary:nth-of-type(3) {
+  left: 76.39%;
+}
+
+.section-overlay-text {
+  width: 38.68%;
+  max-width: 473.45px;
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 32.3px;
+  font-weight: 400;
+  line-height: 52.02px;
+  letter-spacing: 0;
+  opacity: 0.46;
+  position: absolute;
+  left: 19.1%;
+  top: 161.84px;
+  height: 104.04px;
+}
+
+.navigation-button {
+  display: flex;
+  width: 24.57px;
+  padding: 5.06px 10.12px;
+  justify-content: center;
+  align-items: center;
+  gap: 2.89px;
+  border-radius: 28.9px;
+  background: var(--color-gray-light);
+  border: none;
+  position: absolute;
+  left: 54.58%;
+  top: 296.23px;
+  height: 24.57px;
+  cursor: pointer;
+}
+
+.navigation-symbol {
+  color: var(--color-white);
+  text-align: center;
+  font-family: 'SF Pro', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 11.05px;
+  font-weight: 400;
+  line-height: 14.45px;
+  letter-spacing: -0.17px;
+}
+
+/* Section 2 - Comfort - Scaled to 85% */
+.section-comfort {
+  width: 100%;
+  height: 434.95px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.comfort-image {
+  width: 55.97%;
+  max-width: 685.1px;
+  height: auto;
+  aspect-ratio: 806/355;
+  position: absolute;
+  left: 41.88%;
+  top: 78.03px;
+}
+
+.comfort-text {
+  width: 38.68%;
+  max-width: 473.45px;
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 32.3px;
+  font-weight: 400;
+  line-height: 52.02px;
+  letter-spacing: 0;
+  position: absolute;
+  left: 12.71%;
+  top: 158.23px;
+  height: 104.04px;
+}
+
+/* Section 3 - Temperature Control - Scaled to 85% */
+.section-temperature {
+  width: 100%;
+  height: 697.94px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-heading {
+  color: var(--color-white);
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-size: 23.8px;
+  font-weight: 400;
+  line-height: 34.68px;
+  letter-spacing: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 62.14px;
+  width: 275.4px;
+  height: 69.36px;
+}
+
+.section-description {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 11.05px;
+  font-weight: 400;
+  line-height: 23.12px;
+  position: absolute;
+  left: 24.51%;
+  top: 149.56px;
+  width: 50.9%;
+  max-width: 623.05px;
+  height: 69.36px;
+}
+
+.text-bold {
+  font-family: var(--font-accent);
+  font-weight: 900;
+}
+
+/* 如果 text-bold 包含 GMET，使用 gmet-trademark 类覆盖 */
+.text-bold.gmet-trademark {
+  font-family: 'Neulis Sans Black Italic', var(--font-accent);
+  font-style: italic;
+}
+
+.temperature-visual-container {
+  width: 85.83%;
+  max-width: 1050.6px;
+  height: auto;
+  aspect-ratio: 1236/431;
+  position: absolute;
+  left: 7.08%;
+  top: 286.83px;
+}
+
+.temperature-visual-background {
+  width: 100%;
+  height: 100%;
+  background: var(--fill-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.temperature-image-left {
+  width: 45.36%;
+  max-width: 476.85px;
+  height: auto;
+  aspect-ratio: 561/388;
+  position: absolute;
+  left: 2.51%;
+  top: 16.62px;
+}
+
+.temperature-image-right {
+  width: 45.45%;
+  max-width: 477.7px;
+  height: auto;
+  aspect-ratio: 281/191;
+  box-shadow: 0 2.89px 2.89px 0 rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: calc(44.79% + 42.5px);
+  top: 16.62px;
+}
+
+.section-navigation {
+  position: absolute;
+  bottom: 45.52px;
+  right: 134.39px;
+  display: flex;
+  gap: 8.67px;
+}
+
+.nav-arrow {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  transform: scale(0.85);
+}
+
+.nav-arrow:hover {
+  opacity: 0.7;
+}
+
+/* Section 4 - Even Temperature - Scaled to 85% */
+.section-even-temperature {
+  width: 100%;
+  height: 814.26px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-even-temperature .section-heading {
+  width: 282.2px;
+  top: 11.56px;
+}
+
+.section-even-temperature .section-description {
+  top: 83.09px;
+  height: 354.03px;
+}
+
+.material-showcase {
+  width: 57.01%;
+  max-width: 697.85px;
+  height: auto;
+  aspect-ratio: 821/768;
+  position: absolute;
+  left: 21.46%;
+  top: 203.02px;
+}
+
+.material-image {
+  position: absolute;
+}
+
+.material-image-1 {
+  width: 57.13%;
+  max-width: 398.65px;
+  height: auto;
+  aspect-ratio: 469/297;
+  left: 0;
+  top: 53.47px;
+}
+
+.material-image-2 {
+  width: 41.78%;
+  max-width: 291.55px;
+  height: auto;
+  aspect-ratio: 343/515;
+  left: 58.28%;
+  top: 0;
+}
+
+.material-image-3 {
+  width: 34.35%;
+  max-width: 239.7px;
+  height: auto;
+  aspect-ratio: 47/61;
+  left: 20.71%;
+  top: 294.7px;
+}
+
+/* Section 5 - Dual Zone - Scaled to 85% */
+.section-dual-zone {
+  width: 100%;
+  height: 861.94px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-dual-zone .section-heading {
+  width: 44.31%;
+  max-width: 542.3px;
+  top: 36.85px;
+  height: 69.36px;
+}
+
+.section-dual-zone .section-description {
+  width: 51.04%;
+  max-width: 624.75px;
+  height: 65.03px;
+  left: 23.89%;
+  top: 133.66px;
+}
+
+.dual-zone-image {
+  width: 54.65%;
+  max-width: 668.95px;
+  height: auto;
+  aspect-ratio: 1/1;
+  position: absolute;
+  left: 22.64%;
+  top: 253.6px;
+}
+
+/* Section 6 - Smart Hero - Scaled to 85% */
+.section-smart-hero {
+  width: 100%;
+  height: 583.06px;
+  align-self: stretch;
+  position: relative;
+  margin-top: 51px;
+  margin-bottom: 51px;
+}
+
+.smart-hero-background {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 480/269;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.smart-hero-title {
+  width: 62.5%;
+  max-width: 765px;
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 32.3px;
+  font-weight: 400;
+  line-height: 52.02px;
+  letter-spacing: 0;
+  position: absolute;
+  left: 12.5%;
+  top: 318.62px;
+  height: 104.04px;
+}
+
+/* Section 7 - Sleep Rhythm - Scaled to 85% */
+.section-sleep-rhythm {
+  width: 100%;
+  height: 598.95px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-sleep-rhythm .section-heading {
+  width: 47.5%;
+  max-width: 581.4px;
+  height: 100.43px;
+  top: 52.74px;
+}
+
+.section-description-center {
+  text-align: center;
+  height: 354.03px;
+  top: 138px;
+}
+
+.sleep-rhythm-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 120/41;
+  position: absolute;
+  left: 0;
+  top: 243.48px;
+  margin-top: 34px;
+}
+
+/* Section 8 - Zero Noise - Scaled to 85% */
+.section-zero-noise {
+  width: 100%;
+  height: 695.05px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-zero-noise .section-heading {
+  width: 50.69%;
+  max-width: 620.5px;
+  top: 90.31px;
+  height: 69.36px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  gap: 26.73px 2.71%;
+  position: absolute;
+  left: 27.25%;
+  top: 186.41px;
+  width: 55.14%;
+  max-width: 674.05px;
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 377/254;
+  border-radius: 7.23px;
+}
+
+/* Section 9 - Safety Hero - Scaled to 85% */
+.section-safety-hero {
+  width: 100%;
+  height: 531.04px;
+  align-self: stretch;
+  position: relative;
+  background-image: url('https://api.builder.io/api/v1/image/assets/TEMP/6b3a2d5f61e8c466fd874bdd4532ccea26314dae?width=1470');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.safety-hero-title {
+  width: 62.5%;
+  max-width: 765px;
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 32.3px;
+  font-weight: 400;
+  line-height: 52.02px;
+  letter-spacing: 0;
+  position: absolute;
+  left: 12.5%;
+  top: 178.46px;
+  height: 104.04px;
+}
+
+/* Section 10 - Safety Features - Scaled to 85% */
+.section-safety-features {
+  display: flex;
+  width: 100%;
+  padding: 114.88px 16.04% 46.24px 16.04%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 48.41px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+  min-height: 899.51px;
+}
+
+.section-safety-features .section-heading {
+  align-self: stretch;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 114.88px;
+  width: 50.69%;
+  max-width: 620.5px;
+  height: 69.36px;
+  text-align: center;
+}
+
+.safety-features-image {
+  width: 67.92%;
+  max-width: 831.3px;
+  height: auto;
+  aspect-ratio: 978/859;
+  position: absolute;
+  left: 16.04%;
+  top: 232.65px;
+}
+
+/* Section 11 - Product Comparison - Scaled to 85% */
+.section-product-comparison {
+  width: 100%;
+  height: 705.88px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-product-comparison .section-heading {
+  width: 50.69%;
+  max-width: 620.5px;
+  top: 37.57px;
+  height: 69.36px;
+}
+
+.product-comparison-grid {
+  display: flex;
+  gap: 19.51px;
+  position: absolute;
+  left: 12.01%;
+  top: 145.22px;
+  width: 76%;
+  max-width: 929.9px;
+  justify-content: space-between;
+}
+
+.comparison-image {
+  width: 22.95%;
+  max-width: 213.35px;
+  height: auto;
+  aspect-ratio: 251/394;
+  border-radius: 7.23px;
+  flex: 1;
+}
+
+.comparison-subtitle {
+  width: 63.4%;
+  max-width: 776.05px;
+  color: var(--color-white);
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 34.68px;
+  letter-spacing: 0;
+  position: absolute;
+  left: 18.26%;
+  top: 551.99px;
+  height: 69.36px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 443px;
+  align-self: stretch;
+  position: relative;
+}
+
+.footer-divider {
+  width: 92.57%;
+  max-width: 1333px;
+  height: 1px;
+  background: var(--color-white);
+  position: absolute;
+  left: 3.19%;
+  top: 51px;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 4.86%;
+  margin-top: 106.25px;
+}
+
+.footer-newsletter {
+  position: absolute;
+  left: 50px;
+  top: 140.25px;
+}
+
+.footer-language-selector {
+  width: 50.15px;
+  height: 23.8px;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 6.8px;
+}
+
+.footer-language-icon {
+  width: 10.2px;
+  height: 10.2px;
+  aspect-ratio: 1/1;
+}
+
+.footer-language-text {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 21.25px;
+  letter-spacing: 0;
+}
+
+.footer-language-arrow {
+  width: 6.8px;
+  height: 6.8px;
+  transform: rotate(0deg);
+  aspect-ratio: 1/1;
+}
+
+.footer-links {
+  display: flex;
+  gap: 143.65px;
+  position: absolute;
+  right: 4.86%;
+  top: 106.25px;
+  transform: translateX(-20px); /* 向左平移20px */
+  flex-wrap: nowrap;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 11.05px;
+  flex: 0 0 auto;
+}
+
+.footer-column-title {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21.25px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.footer-column-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.footer-column-links a {
+  color: var(--color-gray);
+  font-family: var(--font-secondary);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 29.75px;
+  letter-spacing: 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.footer-column-links a:hover {
+  color: var(--color-white);
+}
+
+.footer-copyright {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 25.5px;
+  letter-spacing: 0;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1440px) {
+  .home-page {
+    width: 100%;
+  }
+}
