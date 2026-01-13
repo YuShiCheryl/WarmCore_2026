@@ -234,8 +234,9 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 388.45px;
+  top: 568.45px;
   cursor: pointer;
+  /* 相对于hero-section居中，而不是hero-content */
 }
 
 /* Section 1 - Product Showcase */
@@ -536,7 +537,7 @@
   height: auto;
   aspect-ratio: 47/61;
   left: 20.71%;
-  top: 341.7px;
+  top: 346.7px;
 }
 
 /* Section 5 - Dual Zone */
@@ -654,10 +655,10 @@
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(2, 26.18%);
+  grid-template-columns: repeat(2, 40%);
   gap: 31.45px 2.71%;
   position: absolute;
-  left: 22.43%;
+  left: 27.25%;
   top: 219.3px;
   width: 55.14%;
   max-width: 793px;
@@ -676,17 +677,10 @@
   height: 624.75px;
   align-self: stretch;
   position: relative;
-}
-
-.safety-hero-background {
-  width: 51.04%;
-  max-width: 735px;
-  height: auto;
-  aspect-ratio: 49/96;
-  transform: rotate(-90deg);
-  position: absolute;
-  left: 0;
-  top: 0;
+  background-image: url('https://api.builder.io/api/v1/image/assets/TEMP/6b3a2d5f61e8c466fd874bdd4532ccea26314dae?width=1470');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .safety-hero-title {
@@ -722,11 +716,13 @@
 .section-safety-features .section-heading {
   align-self: stretch;
   position: absolute;
-  left: 24.65%;
+  left: 50%;
+  transform: translateX(-50%);
   top: 135.15px;
   width: 50.69%;
   max-width: 730px;
   height: 81.6px;
+  text-align: center;
 }
 
 .safety-features-image {

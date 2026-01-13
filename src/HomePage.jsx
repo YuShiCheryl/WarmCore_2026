@@ -46,10 +46,10 @@ const HomePage = () => {
           <button className="hero-button hero-button-secondary">
             了解 <span className="button-bold gmet-trademark">GMET</span>®专利技术
           </button>
-          <svg className="scroll-indicator" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16 24L24 32M24 32L32 24M24 32V16M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z" stroke="#B3B3B3" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
         </div>
+        <svg className="scroll-indicator" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 24L24 32M24 32L32 24M24 32V16M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z" stroke="#B3B3B3" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
       </section>
 
       {/* Section 1 - Product Showcase */}
@@ -209,11 +209,6 @@ const HomePage = () => {
 
       {/* Section 9 - Safety Hero */}
       <section className="section-safety-hero">
-        <img 
-          src="https://api.builder.io/api/v1/image/assets/TEMP/6b3a2d5f61e8c466fd874bdd4532ccea26314dae?width=1470" 
-          alt="Safety background" 
-          className="safety-hero-background"
-        />
         <h2 className="safety-hero-title">贴身级安全与耐久，<br />科学验证更安心。</h2>
       </section>
 
