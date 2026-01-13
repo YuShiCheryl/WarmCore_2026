@@ -66,7 +66,7 @@
   color: var(--color-white);
   text-align: center;
   font-family: var(--font-primary);
-  font-size: 13.6px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 20.4px;
   letter-spacing: 0.425px;
@@ -110,7 +110,7 @@
 .language-text {
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 10.2px;
+  font-size: 10px;
   font-weight: 700;
   line-height: 21.25px;
   letter-spacing: 0;
@@ -160,7 +160,7 @@
   -webkit-text-stroke-width: 0.85px;
   -webkit-text-stroke-color: var(--color-black);
   font-family: var(--font-primary);
-  font-size: 51px;
+  font-size: 50px;
   font-weight: 200;
   line-height: 64.6px;
   letter-spacing: 0.425px;
@@ -170,7 +170,7 @@
   width: 714px;
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 20.4px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 40.8px;
   letter-spacing: 0;
@@ -196,7 +196,7 @@
   height: 40.8px;
   color: var(--color-white);
   font-family: var(--font-primary);
-  font-size: 13.6px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 20.4px;
   letter-spacing: 0.425px;
@@ -252,7 +252,7 @@
   max-width: 612px;
   color: var(--color-white);
   font-family: var(--font-primary);
-  font-size: 54.4px;
+  font-size: 50px;
   font-weight: 200;
   line-height: 64.6px;
   letter-spacing: 0.425px;
@@ -300,7 +300,7 @@
   max-width: 557px;
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 40.8px;
+  font-size: 38px;
   font-weight: 400;
   line-height: 61.2px;
   letter-spacing: 0;
@@ -332,7 +332,7 @@
   color: var(--color-white);
   text-align: center;
   font-family: 'SF Pro', -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 12.75px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 17px;
   letter-spacing: -0.1955px;
@@ -362,7 +362,7 @@
   max-width: 557px;
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 40.8px;
+  font-size: 38px;
   font-weight: 400;
   line-height: 61.2px;
   letter-spacing: 0;
@@ -385,7 +385,7 @@
   color: var(--color-white);
   text-align: center;
   font-family: var(--font-secondary);
-  font-size: 30.6px;
+  font-size: 28px;
   font-weight: 400;
   line-height: 40.8px;
   letter-spacing: 0;
@@ -400,7 +400,7 @@
 .section-description {
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 13.6px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 27.2px;
   position: absolute;
@@ -595,7 +595,7 @@
   max-width: 900px;
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 40.8px;
+  font-size: 38px;
   font-weight: 400;
   line-height: 61.2px;
   letter-spacing: 0;
@@ -694,7 +694,7 @@
   max-width: 900px;
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 40.8px;
+  font-size: 38px;
   font-weight: 400;
   line-height: 61.2px;
   letter-spacing: 0;
@@ -781,7 +781,7 @@
   color: var(--color-white);
   text-align: center;
   font-family: var(--font-secondary);
-  font-size: 20.4px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 40.8px;
   letter-spacing: 0;
@@ -843,7 +843,7 @@
 .footer-language-text {
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 10.2px;
+  font-size: 10px;
   font-weight: 700;
   line-height: 21.25px;
   letter-spacing: 0;
@@ -873,7 +873,7 @@
 .footer-column-title {
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 12.75px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 21.25px;
   letter-spacing: 0;
@@ -889,7 +889,7 @@
 .footer-column-links a {
   color: var(--color-gray);
   font-family: var(--font-secondary);
-  font-size: 10.2px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 29.75px;
   letter-spacing: 0;
@@ -904,7 +904,7 @@
 .footer-copyright {
   color: var(--color-white);
   font-family: var(--font-secondary);
-  font-size: 10.2px;
+  font-size: 10px;
   font-weight: 400;
   line-height: 25.5px;
   letter-spacing: 0;

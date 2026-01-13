@@ -262,11 +262,11 @@ const HomePage = () => {
         <div className="footer-content">
           <div className="footer-newsletter">
             <svg width="193" height="112" viewBox="0 0 193 112" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <text fill="white" style={{ whiteSpace: 'pre', fontFamily: 'Font1', fontSize: '12.75px', fontWeight: 'bold' }}>
+              <text fill="white" style={{ whiteSpace: 'pre', fontFamily: 'Font1', fontSize: '13px', fontWeight: 'bold' }}>
                 <tspan x="0" y="35.627">希望获取更多咨询？</tspan>
                 <tspan x="0" y="60.627">留下您的邮箱</tspan>
               </text>
-              <text fill="#AEAEB2" style={{ whiteSpace: 'pre', fontFamily: 'Font1', fontSize: '8.5px' }}>
+              <text fill="#AEAEB2" style={{ whiteSpace: 'pre', fontFamily: 'Font1', fontSize: '10px' }}>
                 <tspan x="0" y="102.418">输入电子邮件</tspan>
               </text>
               <rect x="0.25" y="111.25" width="149.5" height="0.5" stroke="white" strokeWidth="0.5"/>
