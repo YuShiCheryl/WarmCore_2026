@@ -141,20 +141,22 @@ const HomePage = () => {
       {/* Section 3 - Temperature Control */}
       <section className="section-temperature">
         <h2 className="section-heading">所设即所得，<br />温度从未如此精准。</h2>
-        <p className="section-description">
+        <p className="section-description" data-animate="fade-up">
           恒温并非静止，而是主动对环境做出响应的动态平衡。夜晚的舒适，不应因为被褥的厚薄或环境的冷暖而改变。<span className="text-bold gmet-trademark">GMET</span>®技术，如同一位细心的守护者时刻感受温度的细微变化。这一切，只为让您更好的进入深睡眠。
         </p>
-        <div className="temperature-visual-container">
+        <div className="temperature-visual-container" data-animate="fade-up" style={{ '--animation-delay': '0.1s' }}>
           <div className="temperature-visual-background"></div>
           <img 
             src="https://api.builder.io/api/v1/image/assets/TEMP/e2909526adb5c9f6d915b08c837a3b9e9cf2414c?width=1122" 
             alt="Temperature visualization 1" 
             className="temperature-image-left"
+            data-animate="fade-left"
           />
           <img 
             src="https://api.builder.io/api/v1/image/assets/TEMP/75bc846046eda948f1a0351b88ad8d08c28008ce?width=1124" 
             alt="Temperature visualization 2" 
             className="temperature-image-right"
+            data-animate="fade-right"
           />
         </div>
         <div className="section-navigation">
@@ -170,24 +172,27 @@ const HomePage = () => {
       {/* Section 4 - Even Temperature */}
       <section className="section-even-temperature">
         <h2 className="section-heading">均匀温场,温润不燥。</h2>
-        <p className="section-description">
+        <p className="section-description" data-animate="fade-up">
           这一切，得益于我们独立研发的<span className="text-bold gmet-trademark">GMET</span>®技术。它采用先进的低温发热非晶材料，发热面积高达传统电热丝的25倍，而厚度仅为20微米。这种"广而薄"的突破性结构，使得热量能够被瞬间、均匀地传导至整个毯面，从物理根源上避免了传统发热材料难以解决的局部过热与冷暖不均现象，为您构建一个真正稳定、均衡的睡眠热环境。
         </p>
-        <div className="material-showcase">
+        <div className="material-showcase" data-animate="fade-up" style={{ '--animation-delay': '0.1s' }}>
           <img 
             src="https://api.builder.io/api/v1/image/assets/TEMP/9b83c50ca7b77623aec68e33abd39fd9a952f6ec?width=938" 
             alt="Material technology 1" 
             className="material-image material-image-1"
+            data-animate="fade-up"
           />
           <img 
             src="https://api.builder.io/api/v1/image/assets/TEMP/54d6464e0ddd64d913171c725c21ea7e69ef2cf1?width=686" 
             alt="Material technology 2" 
             className="material-image material-image-2"
+            data-animate="fade-right"
           />
           <img 
             src="https://api.builder.io/api/v1/image/assets/TEMP/83bd98debebc356a17a1a5aaba5bf6b3476d9c6d?width=564" 
             alt="Material technology 3" 
             className="material-image material-image-3"
+            data-animate="fade-left"
           />
         </div>
       </section>
@@ -195,13 +200,14 @@ const HomePage = () => {
       {/* Section 5 - Dual Zone Control */}
       <section className="section-dual-zone">
         <h2 className="section-heading">独立分区控温：两个人各睡各的"恰好"，<br />舒适和而不同。</h2>
-        <p className="section-description">
+        <p className="section-description" data-animate="fade-up">
           双人深睡毯搭载DualAdjust左右分区控温，让相拥的亲密与相异的体温偏好，从此无需妥协。无论是怕冷或怕热。系统为左右两侧构建独立的温度闭环，确保每一侧的设定、传感与调节互不干扰。
         </p>
         <img 
           src="https://api.builder.io/api/v1/image/assets/TEMP/787d6575854d3c80124dfa0743765363e475ac09?width=1574" 
           alt="Dual zone temperature control" 
           className="dual-zone-image"
+          data-animate="fade-up"
         />
       </section>
 
@@ -212,13 +218,13 @@ const HomePage = () => {
           alt="Smart algorithm background" 
           className="smart-hero-background"
         />
-        <h2 className="smart-hero-title">智能算法，<br />深睡更容易。</h2>
+        <h2 className="smart-hero-title" data-animate="fade-up">智能算法，<br />深睡更容易。</h2>
       </section>
 
       {/* Section 7 - Sleep Rhythm */}
       <section className="section-sleep-rhythm">
         <h2 className="section-heading">根据睡眠节律与状态智能调温，睡得更好，只属于你的私人深睡眠助手。</h2>
-        <p className="section-description section-description-center">
+        <p className="section-description section-description-center" data-animate="fade-up">
           安睡，是身体在夜间律动的旅程。在这条由4-6个睡眠周期构成的波浪线上，从入睡、深睡到快速眼动期，身体对温度的需求时刻变化。智能深睡毯Pro，正是为此而生的深眠助手。它凭借精密算法，懂得"何时该暖，何时该
 凉"。您夜间的每一次翻身、起夜、短暂的微觉醒，都能被它敏锐察觉，并通过对温度的
 细腻调节，助您更平稳地过渡到下一个睡眠周期。
@@ -227,6 +233,7 @@ const HomePage = () => {
           src="https://api.builder.io/api/v1/image/assets/TEMP/b3ad728a071fecb6143bc4369644b83d693e616a?width=2880" 
           alt="Sleep rhythm visualization" 
           className="sleep-rhythm-image"
+          data-animate="fade-up"
         />
       </section>
 
@@ -238,28 +245,32 @@ const HomePage = () => {
             src="https://api.builder.io/api/v1/image/assets/TEMP/0e0c04bd4bfc9fa39cd653dc7c981fffaf89389b?width=754" 
             alt="Feature 1" 
             className="feature-image"
+            data-animate="fade-up"
           />
           <img 
             src="https://api.builder.io/api/v1/image/assets/TEMP/315b92246346324c22705b5eb487b311da3ab70e?width=754" 
             alt="Feature 2" 
             className="feature-image"
+            data-animate="fade-up"
           />
           <img 
             src="https://api.builder.io/api/v1/image/assets/TEMP/403a52b6d2286d469fef87c0950eae789fd0346f?width=754" 
             alt="Feature 3" 
             className="feature-image"
+            data-animate="fade-up"
           />
           <img 
             src="https://api.builder.io/api/v1/image/assets/TEMP/9a340560d88925f4575c498384992d0a81dc38fe?width=754" 
             alt="Feature 4" 
             className="feature-image"
+            data-animate="fade-up"
           />
         </div>
       </section>
 
       {/* Section 9 - Safety Hero */}
       <section className="section-safety-hero">
-        <h2 className="safety-hero-title">贴身级安全与耐久，<br />科学验证更安心。</h2>
+        <h2 className="safety-hero-title" data-animate="fade-up">贴身级安全与耐久，<br />科学验证更安心。</h2>
       </section>
 
       {/* Section 10 - Safety Features */}
@@ -269,6 +280,7 @@ const HomePage = () => {
           src="https://api.builder.io/api/v1/image/assets/TEMP/2425f5f8f19b4a421be0c3c58fa853954e885ee8?width=1956" 
           alt="Safety features" 
           className="safety-features-image"
+          data-animate="fade-up"
         />
       </section>
 
@@ -280,24 +292,30 @@ const HomePage = () => {
             src="https://api.builder.io/api/v1/image/assets/TEMP/965877888cc36164f1ef6e4c75739ceb02cd1659?width=502" 
             alt="Product 1" 
             className="comparison-image"
+            data-animate="fade-up"
           />
           <img 
             src="https://api.builder.io/api/v1/image/assets/TEMP/126d73be35535cb21112a399342b1fceb01e51c8?width=502" 
             alt="Product 2" 
             className="comparison-image"
+            data-animate="fade-up"
           />
           <img 
             src="https://api.builder.io/api/v1/image/assets/TEMP/1bd14e8208909a594aa18d636b1fc0fa9e86bb78?width=502" 
             alt="Product 3" 
             className="comparison-image"
+            data-animate="fade-up"
           />
           <img 
             src="https://api.builder.io/api/v1/image/assets/TEMP/6dcfbc2dbc174d4d8db81dc6404f270120659c8d?width=502" 
             alt="Product 4" 
             className="comparison-image"
+            data-animate="fade-up"
           />
         </div>
-        <p className="comparison-subtitle">内部产品功能比对：不用做复杂攻略，<br />把觉睡好的事情就交给我们了</p>
+        <p className="comparison-subtitle" data-animate="fade-up" style={{ '--animation-delay': '0.1s' }}>
+          内部产品功能比对：不用做复杂攻略，<br />把觉睡好的事情就交给我们了
+        </p>
       </section>
 
       {/* Footer */}

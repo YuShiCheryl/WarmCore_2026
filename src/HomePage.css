@@ -482,7 +482,7 @@
   aspect-ratio: 281/191;
   box-shadow: 0 3.4px 3.4px 0 rgba(0, 0, 0, 0.25);
   position: absolute;
-  left: 44.79%;
+  left: calc(44.79% + 50px);
   top: 19.55px;
 }
 
