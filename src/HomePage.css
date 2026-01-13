@@ -222,6 +222,9 @@
 .button-bold.gmet-trademark {
   font-family: 'Neulis Sans Black Italic', var(--font-accent);
   font-style: italic;
+  display: inline;
+  margin-left: -0.2em;
+  margin-right: -0.2em;
 }
 
 .scroll-indicator {
