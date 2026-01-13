@@ -1,0 +1,29 @@
+{
+  "name": "warmcore-homepage",
+  "version": "1.0.0",
+  "description": "Homepage for Warmcore Technology's Smart Deep Sleep Blanket Pro 3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
+  },
+  "keywords": [
+    "warmcore",
+    "sleep-blanket",
+    "temperature-control",
+    "gmet-technology"
+  ],
+  "author": "Warmcore Technology",
+  "license": "UNLICENSED"
+}

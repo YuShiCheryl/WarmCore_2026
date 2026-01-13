@@ -1,0 +1,842 @@
+:root {
+  --color-black: #000;
+  --color-white: #FFF;
+  --color-neutral: #DEE5ED;
+  --color-gray: #8E8E93;
+  --color-gray-light: #999;
+  --color-gray-muted: #AEAEB2;
+  --fill-primary: rgba(120, 120, 120, 0.20);
+  --fill-secondary: rgba(120, 120, 128, 0.16);
+  --font-primary: 'CustomPrimary', -apple-system, Roboto, Helvetica, sans-serif;
+  --font-secondary: 'CustomSecondary', -apple-system, Roboto, Helvetica, sans-serif;
+  --font-accent: 'CustomAccent', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-page {
+  display: flex;
+  width: 1440px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--color-black);
+  position: relative;
+}
+
+/* Header */
+.header {
+  display: flex;
+  height: 72px;
+  padding: 22px 38px 22px 80px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 239px;
+  align-self: stretch;
+  border-bottom: 1px solid var(--color-neutral);
+  background: var(--fill-primary);
+  position: relative;
+}
+
+.header-logo {
+  width: 250px;
+  height: 22px;
+  overflow: hidden;
+  position: absolute;
+  left: 80px;
+  top: 25px;
+}
+
+.header-nav {
+  display: flex;
+  width: 535px;
+  align-items: center;
+  gap: 48px;
+  position: absolute;
+  left: 569px;
+  top: 24px;
+  height: 24px;
+}
+
+.nav-link {
+  color: var(--color-white);
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.nav-link-bold {
+  font-family: var(--font-accent);
+  font-weight: 900;
+}
+
+.language-selector {
+  width: 59px;
+  height: 28px;
+  position: absolute;
+  left: 1343px;
+  top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.language-icon {
+  width: 12px;
+  height: 12px;
+  aspect-ratio: 1/1;
+}
+
+.language-text {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+.language-arrow {
+  width: 8px;
+  height: 8px;
+  transform: rotate(90deg);
+  aspect-ratio: 1/1;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  padding: 212px 386px 23px 174px;
+  align-items: center;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+  min-height: 740px;
+}
+
+.hero-content {
+  width: 880px;
+  height: 505px;
+  position: absolute;
+  left: 174px;
+  top: 212px;
+}
+
+.hero-text-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 880px;
+  height: 152px;
+}
+
+.hero-title {
+  width: 880px;
+  color: var(--color-white);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--color-black);
+  font-family: var(--font-primary);
+  font-size: 60px;
+  font-weight: 200;
+  line-height: 76px;
+  letter-spacing: 0.5px;
+}
+
+.hero-subtitle {
+  width: 714px;
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0;
+  opacity: 0.7;
+  position: absolute;
+  left: 0;
+  top: 160px;
+  height: 48px;
+}
+
+.hero-button {
+  display: flex;
+  width: 250px;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  border: 1px solid var(--color-white);
+  background: transparent;
+  position: absolute;
+  left: 0;
+  height: 48px;
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hero-button:first-of-type {
+  top: 248px;
+}
+
+.hero-button-secondary {
+  top: 324px;
+}
+
+.button-bold {
+  font-family: var(--font-accent);
+  font-weight: 900;
+}
+
+.scroll-indicator {
+  position: absolute;
+  left: 586px;
+  top: 457px;
+  cursor: pointer;
+}
+
+/* Section 1 - Product Showcase */
+.section-product-showcase {
+  height: 595px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-title {
+  width: 612px;
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  font-size: 64px;
+  font-weight: 200;
+  line-height: 76px;
+  letter-spacing: 0.5px;
+  position: absolute;
+  left: 171px;
+  top: 15px;
+  height: 76px;
+}
+
+.product-grid {
+  position: relative;
+}
+
+.product-image-main {
+  width: 674px;
+  height: 367px;
+  border-radius: 10px;
+  position: absolute;
+  left: 180px;
+  top: 112px;
+}
+
+.product-image-secondary {
+  width: 208px;
+  height: 367px;
+  border-radius: 10px;
+  position: absolute;
+  top: 112px;
+}
+
+.product-image-secondary:nth-of-type(2) {
+  left: 875px;
+}
+
+.product-image-secondary:nth-of-type(3) {
+  left: 1100px;
+}
+
+.section-overlay-text {
+  width: 557px;
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0;
+  opacity: 0.46;
+  position: absolute;
+  left: 275px;
+  top: 224px;
+  height: 144px;
+}
+
+.navigation-button {
+  display: flex;
+  width: 34px;
+  padding: 7px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 40px;
+  background: var(--color-gray-light);
+  border: none;
+  position: absolute;
+  left: 786px;
+  top: 410px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.navigation-symbol {
+  color: var(--color-white);
+  text-align: center;
+  font-family: 'SF Pro', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.23px;
+}
+
+/* Section 2 - Comfort */
+.section-comfort {
+  height: 602px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.comfort-image {
+  width: 806px;
+  height: 355px;
+  aspect-ratio: 806/355;
+  position: absolute;
+  left: 603px;
+  top: 108px;
+}
+
+.comfort-text {
+  width: 557px;
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0;
+  position: absolute;
+  left: 183px;
+  top: 219px;
+  height: 144px;
+}
+
+/* Section 3 - Temperature Control */
+.section-temperature {
+  height: 966px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-heading {
+  color: var(--color-white);
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 86px;
+  width: 324px;
+  height: 96px;
+}
+
+.section-description {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  position: absolute;
+  left: 353px;
+  top: 207px;
+  width: 733px;
+  height: 96px;
+}
+
+.text-bold {
+  font-family: var(--font-accent);
+  font-weight: 900;
+}
+
+.temperature-visual-container {
+  width: 1236px;
+  height: 431px;
+  position: absolute;
+  left: 102px;
+  top: 397px;
+}
+
+.temperature-visual-background {
+  width: 1236px;
+  height: 431px;
+  background: var(--fill-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.temperature-image-left {
+  width: 561px;
+  height: 388px;
+  aspect-ratio: 561/388;
+  position: absolute;
+  left: 31px;
+  top: 23px;
+}
+
+.temperature-image-right {
+  width: 562px;
+  height: 382px;
+  aspect-ratio: 281/191;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: 645px;
+  top: 23px;
+}
+
+.section-navigation {
+  position: absolute;
+  bottom: 63px;
+  right: 186px;
+  display: flex;
+  gap: 12px;
+}
+
+.nav-arrow {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.nav-arrow:hover {
+  opacity: 0.7;
+}
+
+/* Section 4 - Even Temperature */
+.section-even-temperature {
+  height: 1127px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-even-temperature .section-heading {
+  width: 332px;
+  top: 16px;
+}
+
+.section-even-temperature .section-description {
+  top: 115px;
+  height: 490px;
+}
+
+.material-showcase {
+  width: 821px;
+  height: 768px;
+  position: absolute;
+  left: 309px;
+  top: 281px;
+}
+
+.material-image {
+  position: absolute;
+}
+
+.material-image-1 {
+  width: 469px;
+  height: 297px;
+  aspect-ratio: 469/297;
+  left: 0;
+  top: 74px;
+}
+
+.material-image-2 {
+  width: 343px;
+  height: 515px;
+  aspect-ratio: 343/515;
+  left: 478px;
+  top: 0;
+}
+
+.material-image-3 {
+  width: 282px;
+  height: 366px;
+  aspect-ratio: 47/61;
+  left: 170px;
+  top: 402px;
+}
+
+/* Section 5 - Dual Zone */
+.section-dual-zone {
+  height: 1193px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-dual-zone .section-heading {
+  width: 638px;
+  top: 51px;
+  height: 96px;
+}
+
+.section-dual-zone .section-description {
+  width: 735px;
+  height: 90px;
+  left: 344px;
+  top: 185px;
+}
+
+.dual-zone-image {
+  width: 787px;
+  height: 787px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  left: 326px;
+  top: 351px;
+}
+
+/* Section 6 - Smart Hero */
+.section-smart-hero {
+  height: 807px;
+  align-self: stretch;
+  position: relative;
+}
+
+.smart-hero-background {
+  width: 1440px;
+  height: 807px;
+  aspect-ratio: 480/269;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.smart-hero-title {
+  width: 900px;
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0;
+  position: absolute;
+  left: 180px;
+  top: 441px;
+  height: 144px;
+}
+
+/* Section 7 - Sleep Rhythm */
+.section-sleep-rhythm {
+  height: 829px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-sleep-rhythm .section-heading {
+  width: 684px;
+  height: 139px;
+  top: 73px;
+}
+
+.section-description-center {
+  text-align: center;
+  height: 490px;
+  top: 191px;
+}
+
+.sleep-rhythm-image {
+  width: 1440px;
+  height: 492px;
+  aspect-ratio: 120/41;
+  position: absolute;
+  left: 0;
+  top: 337px;
+}
+
+/* Section 8 - Zero Noise */
+.section-zero-noise {
+  height: 962px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-zero-noise .section-heading {
+  width: 730px;
+  top: 125px;
+  height: 96px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 377px);
+  gap: 37px 39px;
+  position: absolute;
+  left: 323px;
+  top: 258px;
+}
+
+.feature-image {
+  width: 377px;
+  height: 254px;
+  border-radius: 10px;
+}
+
+/* Section 9 - Safety Hero */
+.section-safety-hero {
+  height: 735px;
+  align-self: stretch;
+  position: relative;
+}
+
+.safety-hero-background {
+  width: 735px;
+  height: 1440px;
+  transform: rotate(-90deg);
+  aspect-ratio: 49/96;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.safety-hero-title {
+  width: 900px;
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0;
+  position: absolute;
+  left: 180px;
+  top: 247px;
+  height: 144px;
+}
+
+/* Section 10 - Safety Features */
+.section-safety-features {
+  display: flex;
+  padding: 159px 231px 64px 231px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 67px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+  min-height: 1245px;
+}
+
+.section-safety-features .section-heading {
+  align-self: stretch;
+  position: absolute;
+  left: 355px;
+  top: 159px;
+  width: 730px;
+  height: 96px;
+}
+
+.safety-features-image {
+  width: 978px;
+  height: 859px;
+  aspect-ratio: 978/859;
+  position: absolute;
+  left: 231px;
+  top: 322px;
+}
+
+/* Section 11 - Product Comparison */
+.section-product-comparison {
+  height: 977px;
+  align-self: stretch;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-product-comparison .section-heading {
+  width: 730px;
+  top: 52px;
+  height: 96px;
+}
+
+.product-comparison-grid {
+  display: flex;
+  gap: 27px;
+  position: absolute;
+  left: 173px;
+  top: 201px;
+}
+
+.comparison-image {
+  width: 251px;
+  height: 394px;
+  border-radius: 10px;
+}
+
+.comparison-subtitle {
+  width: 913px;
+  color: var(--color-white);
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0;
+  position: absolute;
+  left: 263px;
+  top: 764px;
+  height: 96px;
+}
+
+/* Footer */
+.footer {
+  height: 580px;
+  align-self: stretch;
+  position: relative;
+}
+
+.footer-divider {
+  width: 1333px;
+  height: 1px;
+  background: var(--color-white);
+  position: absolute;
+  left: 46px;
+  top: 60px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+  margin-top: 125px;
+}
+
+.footer-newsletter {
+  position: absolute;
+  left: 70px;
+  top: 165px;
+}
+
+.footer-language-selector {
+  width: 59px;
+  height: 28px;
+  position: absolute;
+  left: 70px;
+  top: 530px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-language-icon {
+  width: 12px;
+  height: 12px;
+  aspect-ratio: 1/1;
+}
+
+.footer-language-text {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+.footer-language-arrow {
+  width: 8px;
+  height: 8px;
+  transform: rotate(90deg);
+  aspect-ratio: 1/1;
+}
+
+.footer-links {
+  display: flex;
+  gap: 169px;
+  position: absolute;
+  left: 886px;
+  top: 125px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.footer-column-title {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+.footer-column-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.footer-column-links a {
+  color: var(--color-gray);
+  font-family: var(--font-secondary);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column-links a:hover {
+  color: var(--color-white);
+}
+
+.footer-copyright {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+  position: absolute;
+  left: 1215px;
+  top: 528px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1440px) {
+  .home-page {
+    width: 100%;
+  }
+}

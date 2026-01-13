@@ -1,0 +1,70 @@
+/* 自定义字体定义 - 请根据客户提供的字体文件修改字体名称和路径 */
+@font-face {
+  font-family: 'CustomPrimary';
+  src: url('/fonts/primary-font.woff2') format('woff2'),
+       url('/fonts/primary-font.woff') format('woff'),
+       url('/fonts/primary-font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CustomPrimary';
+  src: url('/fonts/primary-font-bold.woff2') format('woff2'),
+       url('/fonts/primary-font-bold.woff') format('woff'),
+       url('/fonts/primary-font-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CustomSecondary';
+  src: url('/fonts/secondary-font.woff2') format('woff2'),
+       url('/fonts/secondary-font.woff') format('woff'),
+       url('/fonts/secondary-font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CustomAccent';
+  src: url('/fonts/accent-font.woff2') format('woff2'),
+       url('/fonts/accent-font.woff') format('woff'),
+       url('/fonts/accent-font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 保留 Google Fonts 作为后备字体（可选，如果不需要可以删除） */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=DM+Sans:wght@200;400&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'CustomSecondary', 'CustomPrimary', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000;
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
