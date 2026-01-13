@@ -47,9 +47,9 @@ const HomePage = () => {
             了解 <span className="button-bold gmet-trademark">GMET</span>®专利技术
           </button>
         </div>
-        <svg className="scroll-indicator" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16 24L24 32M24 32L32 24M24 32V16M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z" stroke="#B3B3B3" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
+          <svg className="scroll-indicator" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 24L24 32M24 32L32 24M24 32V16M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z" stroke="#B3B3B3" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
       </section>
 
       {/* Section 1 - Product Showcase */}
@@ -266,20 +266,6 @@ const HomePage = () => {
               </text>
               <rect x="0.25" y="111.25" width="149.5" height="0.5" stroke="white" strokeWidth="0.5"/>
             </svg>
-            
-            <div className="footer-language-selector">
-              <img 
-                src="https://api.builder.io/api/v1/image/assets/TEMP/b5713774f00b3eb06583559e2886eddbd5835929?width=24" 
-                alt="Language" 
-                className="footer-language-icon"
-              />
-              <span className="footer-language-text">ENG</span>
-              <img 
-                src="https://api.builder.io/api/v1/image/assets/TEMP/cfc9047dc43436e605a5762b2ab61e04ed7c4aa9?width=16" 
-                alt="Dropdown" 
-                className="footer-language-arrow"
-              />
-            </div>
           </div>
 
           <div className="footer-links">
@@ -308,6 +294,20 @@ const HomePage = () => {
               </ul>
             </div>
           </div>
+        </div>
+
+        <div className="footer-language-selector">
+          <img 
+            src="https://api.builder.io/api/v1/image/assets/TEMP/b5713774f00b3eb06583559e2886eddbd5835929?width=24" 
+            alt="Language" 
+            className="footer-language-icon"
+          />
+          <span className="footer-language-text">ENG</span>
+          <img 
+            src="https://api.builder.io/api/v1/image/assets/TEMP/cfc9047dc43436e605a5762b2ab61e04ed7c4aa9?width=16" 
+            alt="Dropdown" 
+            className="footer-language-arrow"
+          />
         </div>
 
         <p className="footer-copyright">北京暖芯科技有限公司</p>
