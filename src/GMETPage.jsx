@@ -18,8 +18,8 @@ const GMETPage = () => {
           <a href="/gmet-tech" className="nav-link">
             <span className="nav-link-bold gmet-trademark">GMET</span>®技术
           </a>
-          <a href="#solutions" className="nav-link">解决方案与产品</a>
-          <a href="#about" className="nav-link">关于我们</a>
+          <a href="/#solutions" className="nav-link">解决方案与产品</a>
+          <a href="/#about" className="nav-link">关于我们</a>
         </nav>
         <div className="language-selector">
           <img 
